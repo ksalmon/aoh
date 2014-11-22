@@ -7,6 +7,13 @@ a{
 		left:30px;
 		height:50px;
 		width:50px;	
-		
-
 	}
+video { 
+  position: inherit;
+  top:0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 800px;
+  z-index: -100;
+}
