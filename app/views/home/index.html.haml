@@ -8,15 +8,17 @@
       %h2.icon.icon-stack Assholes of History
       %ul
         %li
-          %a.icon.icon-data{:href => "#"} Home
+          
+          %a.icon-nav_burger{:href => "#"} Home
+
         %li
-          %a.icon.icon-location{:href => "#"} Featured
+          %a.icon-nav_burger{:href => "#"} Featured
         %li
-          %a.icon.icon-study{:href => "#"} Collections
+          %a.icon-study{:href => "#"} Collections
         %li
-          %a.icon.icon-photo{:href => "#"} About
+          %a.icon-photo{:href => "#"} About
         %li
-          %a.icon.icon-wallet{:href => "#"} Store
+          %a.icon-wallet{:href => "#"} Store
     .st-pusher
       %video{:autoplay => "", :loop => ""}
         %source{:src => "http://demosthenes.info/assets/videos/polina.mp4", :type => "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\""}
@@ -27,7 +29,7 @@
       .main.clearfix
         #st-trigger-effects.column
           %a.main-nav{"data-effect" => "st-effect", :style => "position:fixed;"}
-            = image_tag "nav/nav_burger.svg" 
+            %i.icon-nav_burger
 
         
 
@@ -60,7 +62,7 @@
 
   onReady(function () {
       show('homepage', true);
-      show('loading', false);
+      show('loading', false).fadeOut(1500);
   });
 
 

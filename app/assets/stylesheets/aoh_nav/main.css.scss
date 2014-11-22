@@ -1,13 +1,30 @@
+$red: rgba(210,77,87,1);
+$gold: rgba(200,170,97,1);
+$lt-gray: rgba(189,195,199,1);
+$gray: rgba(100,100,100,1);
+$black: rgba(60,60,60,1);
+$white: rgba(255,255,255,1);
+
 a{
 	&:hover{cursor:pointer;}
 }
 .main-nav{
+	.icon-nav_burger{
 		position:fixed;
 		top:30px;
 		left:30px;
-		height:50px;
-		width:50px;	
+		font-size:60px;
+		color:#fff;
+		-webkit-transition:color 0.3s ease-out;
+	  -moz-transition:color 0.3s ease-out;
+	  -o-transition:color 0.3s ease-out;
+	  transition:color 0.3s ease-out;
+
+		&:hover{
+			color:$red;
+		}
 	}
+}
 video { 
   position: inherit;
   top:0;
