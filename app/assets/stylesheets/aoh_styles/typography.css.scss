@@ -1,17 +1,102 @@
+$red: rgba(210,77,87,1);
+$gold: rgba(200,170,97,1);
+$lt-gray: rgba(189,195,199,1);
+$gray: rgba(100,100,100,1);
+$black: rgba(60,60,60,1);
+$white: rgba(255,255,255,1);
+
+// Font Variables
+$primary-font: "proxima-nova",sans-serif;
+$secondary-font: "warnock-pro",serif;
+$note-font: "alternate-gothic-no-1-d",sans-serif;
+
 body, html{
-	font-family: "proxima-nova";
+	font-family: $primary-font;
 	font-size:100%;
-	font-weight:200;
+	color:$black;
+}
+
+// Typography Presets
+h1, h2, h3, h4, h5, h6, p, a{
+	margin:0;
+	padding:0;
 }
 h1{
 	font-size:80px;
-	font-family: "proxima-nova";
+	font-family: $primary-font;
+}
+h2{
+	font-size:35px;
+	font-family: $secondary-font;
+	line-height:0.85;
+
+}
+h5{
+	font-size: 16px;
+	font-family: $primary-font;
+	text-transform: uppercase;
+	letter-spacing:1.8px;
+	color:$red;
 }
 p{
-	font-family: "proxima-nova";
-	font-size:14px;
+	font-family: $secondary-font;
+	font-size:18px;
 }
-.button{
-	position:relative;
 
+// Button Styling
+.button{
+	border:solid 3px #fff;
+	background:none;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	font-weight:600;
+	font-size:12px;
+	transition:border 0.3s ease-out;
+	z-index:1000;
+
+	&:hover{
+		border:solid 3px $red;
+		background:$red;
+	}
+}
+
+// Header Styling
+
+.article_link,
+.section_header{
+	border:solid 3px $red;
+	padding:12px 40px 12px 40px;
+	text-transform:uppercase;
+	text-align:center;
+	letter-spacing:2px;
+	color:$black;
+	font-weight:800;
+	font-size:13px;
+	z-index:1000;
+}
+.article_link{
+	transition:border-color 0.3s ease-out;
+	transition:color 0.3s ease-out;
+
+	&:hover{
+		color:$red;
+		border-color:$black;
+	}
+}
+
+// Other Elements
+
+.section_break{
+	position:relative;
+	margin:0 auto;
+	height:4px;
+	width:250px;
+	background-color:$lt-gray;
+}
+
+.byline{
+	font-family: $secondary-font;
+	font-style:italic;
+	font-size:16px;
+	color:#000;
 }
