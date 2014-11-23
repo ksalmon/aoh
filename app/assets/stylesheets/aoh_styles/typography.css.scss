@@ -1,3 +1,8 @@
+body, html{
+	font-family: "proxima-nova";
+	font-size:100%;
+	font-weight:200;
+}
 h1{
 	font-size:80px;
 	font-family: "proxima-nova";
@@ -5,4 +10,8 @@ h1{
 p{
 	font-family: "proxima-nova";
 	font-size:14px;
+}
+.button{
+	position:relative;
+
 }

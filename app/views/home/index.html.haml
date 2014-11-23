@@ -20,23 +20,31 @@
         %li
           %a.icon-wallet{:href => "#"} Store
     .st-pusher
-      %video{:autoplay => "", :loop => ""}
-        %source{:src => "http://demosthenes.info/assets/videos/polina.mp4", :type => "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\""}
-        example menus
-        these menus will be under the push wrapper
-      
+      .intro
+        .logo
+          = image_tag "logo.svg"
+        %a.button{:href => "#"} View The Collection
+        .arrow
+          = image_tag "arrow.svg"
+        %video{:autoplay => "", :loop => ""}
+          %source{:src => "//demosthenes.info/assets/videos/polina.webm", :type => "video/webm"}
+          %source{:src => "http://demosthenes.info/assets/videos/polina.mp4", :type => "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\""}
+        
+
         
       .main.clearfix
         #st-trigger-effects.column
-          %a.main-nav{"data-effect" => "st-effect", :style => "position:fixed;"}
+          %a.main-nav{"data-effect" => "st-effect"}
             %i.icon-nav_burger
 
         
-
-
-
       
+
+          .large-6 
+            %p  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Abore et dolore magna aliqua. Lorem ipsum dolor sit amet, con. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Abore et dolore magna aliqua. Lorem ipsum dolor sit amet, con. Lorem ipsum dolor.
+
                   
+                              
 
 
 

@@ -11,26 +11,69 @@ a{
 .main-nav{
 	.icon-nav_burger{
 		position:fixed;
-		top:30px;
-		left:30px;
-		font-size:60px;
+		top:40px;
+		left:40px;
+		font-size:50px;
 		color:#fff;
-		-webkit-transition:color 0.3s ease-out;
-	  -moz-transition:color 0.3s ease-out;
-	  -o-transition:color 0.3s ease-out;
-	  transition:color 0.3s ease-out;
+		transition:color 0.3s ease-out;
+
+	  
 
 		&:hover{
 			color:$red;
 		}
 	}
 }
+.intro{
+	.arrow,
+	.logo{
+		position:absolute;
+	  left:0;
+	  right:0;
+	  margin-left:auto;
+	  margin-right:auto;
+		z-index:100;
+	}
+	.logo{
+		top:200px;
+		width:500px;
+		height:500px;
+	}
+	.arrow{
+		top:550px;
+		width:75px;
+		height:75px;
+	}
+	.button{
+		position:absolute;
+		padding:12px 40px 10px 40px;
+		width:275px;
+		top:395px;
+	  left:0;
+	  right:0;
+	  margin-left:auto;
+	  margin-right:auto;
+
+		border:solid 3px #fff;
+		background:none;
+		text-transform:uppercase;
+		letter-spacing:2px;
+		font-weight:600;
+		font-size:12px;
+		transition:border 0.3s ease-out;
+		z-index:1000;
+
+		&:hover{
+			border:solid 3px $red;
+		}
+
+	}
+}
 video { 
   position: inherit;
   top:0;
   right: 0;
-  bottom: 0;
   min-width: 100%;
-  min-height: 800px;
+  min-height: 700px;
   z-index: -100;
 }
