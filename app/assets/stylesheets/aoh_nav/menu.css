@@ -32,6 +32,7 @@ body,
 	position: relative;
 	left: 0;
 	z-index: 99;
+	background: #fff;
 	height: auto;
 	-webkit-transition: -webkit-transform 0.5s;
 	transition: transform 0.5s;
