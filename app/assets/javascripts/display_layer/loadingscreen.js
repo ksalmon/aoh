@@ -16,7 +16,7 @@ function show(id, value) {
 
 onReady(function () {
     show('homepage', true);
-    show('loading', false).fadeOut(1500);
+    show('loading', false);
 });
 
 
