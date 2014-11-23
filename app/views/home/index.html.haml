@@ -8,67 +8,79 @@
       %h2.icon.icon-stack Assholes of History
       %ul
         %li
-          %a.icon.icon-data{:href => "#"} Home
+          %a{:href => "#"} 
+            %i.icon-home
+            %span Home
         %li
-          %a.icon.icon-location{:href => "#"} Featured
+          %a{:href => "#"} 
+            %i.icon-featured
+            %span Featured
         %li
-          %a.icon.icon-study{:href => "#"} Collections
+          %a{:href => "/collections/gallery"} 
+            %i.icon-collection
+            %span Collection 
+              
         %li
-          %a.icon.icon-photo{:href => "#"} About
+          %a{:href => "#"} 
+            %i.icon-about
+            %span About
         %li
-          %a.icon.icon-wallet{:href => "#"} Store
+          %a{:href => "#"} 
+            %i.icon-shop
+            %span Store
     .st-pusher
-      %video{:autoplay => "", :loop => ""}
-        %source{:src => "http://demosthenes.info/assets/videos/polina.mp4", :type => "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\""}
-        example menus
-        these menus will be under the push wrapper
-      
+      .intro
+        .logo
+          = image_tag "logo.svg"
+        %a.button{:href => "#"} View The Collection
+        .arrow
+          = image_tag "arrow.svg"
+        %video{:autoplay => "", :loop => ""}
+          %source{:src => "//demosthenes.info/assets/videos/polina.webm", :type => "video/webm"}
+          %source{:src => "http://demosthenes.info/assets/videos/polina.mp4", :type => "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\""}
+        
+
         
       .main.clearfix
-        #st-trigger-effects.column
-          %a.main-nav{"data-effect" => "st-effect", :style => "position:fixed;"}
-            = image_tag "nav/nav_burger.svg" 
+        .row#st-trigger-effects
+          %a.main-nav{"data-effect" => "st-effect"}
+            %i.icon-nav_burger
 
         
-
-
-
       
+        .featured.row
+          .section_header.large-3 Featured Article
+          .featured_copy.row
+            .large-6.column 
+              %p  
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Abore et dolore magna aliqua. Lorem ipsum dolor sit amet, con. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Abore et dolore magna aliqua. Lorem ipsum dolor sit amet, con. Lorem ipsum dolor.
+            .large-6.column 
+              %p  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Abore et dolore magna aliqua. Lorem ipsum dolor sit amet, con. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Abore et dolore magna aliqua. Lorem ipsum dolor sit amet, con. Lorem ipsum dolor.
+        .section_break
+        .article.row
+          .title.row.text-center
+            %h2 With Great Power...
+            %h5 Op-Ed Article
+          .copy.large-11.large-centered.column
+            %p.large-6.column 
+              = image_tag "author1.jpg", size: "80x80", class: "author_icon"  
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Abore et dolore magna aliqua. Lorem ipsum dolor sit amet, con. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Abore et dolore magna aliqua. Lorem ipsum dolor sit amet, con. Lorem ipsum dolor.
+           
+            %p.large-6.column  
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Abore et dolore magna aliqua. Lorem ipsum dolor sit amet, con. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Abore et dolore magna aliqua. Lorem ipsum dolor sit amet, con. Lorem ipsum dolor.
+            .byline.large-6.text-right.column - By Kyle Salmon
+          
+            %a.article_link.column.small-2.pull-5 Read More
+      .section_break
+
                   
+                              
 
 
 
 #loading
 
 :javascript
-
-//Loading Screen
-  function onReady(callback) {
-      var intervalID = window.setInterval(checkReady, 1000);
-
-      function checkReady() {
-          if (document.getElementsByTagName('body')[0] !== undefined) {
-              window.clearInterval(intervalID);
-              callback.call(this);
-          }
-      }
-  }
-
-  function show(id, value) {
-      document.getElementById(id).style.display = value ? 'block' : 'none';
-  }
-
-  onReady(function () {
-      show('homepage', true);
-      show('loading', false);
-  });
-
-
-  $(document).foundation();
-
-  // Full Screen Video
-  
-
   // Sidebar Effect
 
   var SidebarMenuEffects = (function() {

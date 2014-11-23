@@ -30,6 +30,8 @@ GEM
     animate-rails (1.0.7)
       rails
     arel (5.0.1.20140414130214)
+    autoprefixer-rails (4.0.1)
+      execjs
     builder (3.2.2)
     chunky_png (1.3.2)
     coffee-rails (4.0.1)
@@ -57,6 +59,9 @@ GEM
       railties (>= 4.0.1)
     hike (1.2.3)
     i18n (0.6.11)
+    icomoon-rails (0.1.0)
+      railties (>= 3.1.1)
+      sass-rails (>= 3.1.1)
     jbuilder (2.2.3)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
@@ -139,8 +144,10 @@ PLATFORMS
 
 DEPENDENCIES
   animate-rails (~> 1.0.7)
+  autoprefixer-rails
   compass-rails
   haml-rails
+  icomoon-rails (~> 0.1.0)
   jbuilder (~> 2.0)
   jquery-rails
   pg

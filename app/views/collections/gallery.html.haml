@@ -1,4 +1,74 @@
-var SidebarMenuEffects = (function() {
+%body
+  #homepage
+  #st-container.st-container
+    /
+      example menus
+      these menus will be on top of the push wrapper
+    %nav#menu.st-menu.st-effect
+      %h2.icon.icon-stack Assholes of History
+      %ul
+        %li
+          %a{:href => "#"} 
+            %i.icon-home
+            %span Home
+        %li
+          %a{:href => "#"} 
+            %i.icon-featured
+            %span Featured
+        %li
+          %a{:href => "/collections/gallery"} 
+            %i.icon-collection
+            %span Collection 
+              
+        %li
+          %a{:href => "#"} 
+            %i.icon-about
+            %span About
+        %li
+          %a{:href => "#"} 
+            %i.icon-shop
+            %span Store
+    .st-pusher
+  
+        
+
+        
+      .main.clearfix
+        .row#st-trigger-effects
+          %a.main-nav{"data-effect" => "st-effect"}
+            %i.icon-nav_burger
+
+        
+      
+        
+        .section_break
+        .article.row
+          .title.row.text-center
+            %h2 With Great Power...
+            %h5 Op-Ed Article
+          .copy.large-11.large-centered.column
+            %p.large-6.column 
+              = image_tag "author1.jpg", size: "80x80", class: "author_icon"  
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Abore et dolore magna aliqua. Lorem ipsum dolor sit amet, con. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Abore et dolore magna aliqua. Lorem ipsum dolor sit amet, con. Lorem ipsum dolor.
+           
+            %p.large-6.column  
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Abore et dolore magna aliqua. Lorem ipsum dolor sit amet, con. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Abore et dolore magna aliqua. Lorem ipsum dolor sit amet, con. Lorem ipsum dolor.
+            .byline.large-6.text-right.column - By Kyle Salmon
+          
+            %a.article_link.column.small-2.pull-5 Read More
+      .section_break
+
+                  
+                              
+
+
+
+#loading
+
+:javascript
+  // Sidebar Effect
+
+  var SidebarMenuEffects = (function() {
 
     function hasParentClass( e, classname ) {
       if(e === document) return false;

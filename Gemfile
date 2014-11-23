@@ -15,8 +15,14 @@ end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 
+# Use Autoprefixer for cross-browser
+gem "autoprefixer-rails"
+
 # animation for styles
 gem 'animate-rails', '~> 1.0.7'
+
+# SVG Icons
+gem 'icomoon-rails', '~> 0.1.0'
 
 # Use Haml for clean markup
 gem 'haml-rails'
