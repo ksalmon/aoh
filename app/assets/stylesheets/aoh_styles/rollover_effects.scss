@@ -3,9 +3,7 @@
 
 /* Individual effects */
 
-
-.collection_sample{
-	.grid_rollover_1 {
+.grid_rollover_1 {
 		position: relative;
 		margin: 0 auto;
 		padding: 1em 0 4em;
@@ -93,71 +91,141 @@
 
 	}
 
-	figure.effect-rollover-line {
-		background: $gray;
-	}
-
-	figure.effect-rollover-line img {
-		max-width: none;
-		width: -webkit-calc(100% + 20px);
-		width: calc(100% + 20px);
-		-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-		transition: opacity 0.35s, transform 0.35s;
-		-webkit-transform: translate3d(-10px,0,0);
-		transform: translate3d(-10px,0,0);
-		-webkit-backface-visibility: hidden;
-		backface-visibility: hidden;
-	}
-
-	figure.effect-rollover-line:hover img {
-		opacity: 0.4;
-		-webkit-transform: translate3d(0,0,0);
-		transform: translate3d(0,0,0);
-	}
-
-	figure.effect-rollover-line h2 {
-		position: relative;
-		overflow: hidden;
-		padding: 1em 0;
-		font-size:20px;
-		font-family: $primary-font;
-		line-height:0.85;
-	}
-
-	figure.effect-rollover-line h2::after {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		height: 1px;
-		background: #fff;
-		content: '';
-		-webkit-transition: -webkit-transform 0.35s;
-		transition: transform 0.35s;
-		-webkit-transform: translate3d(-100%,0,0);
-		transform: translate3d(-100%,0,0);
-	}
-
-	figure.effect-rollover-line:hover h2::after {
-		-webkit-transform: translate3d(0,0,0);
-		transform: translate3d(0,0,0);
-	}
-
-	figure.effect-rollover-line p {
-		padding: 1em 0;
-		opacity: 0;
-		-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-		transition: opacity 0.35s, transform 0.35s;
-		-webkit-transform: translate3d(100%,0,0);
-		transform: translate3d(100%,0,0);
-	}
-
-	figure.effect-rollover-line:hover p {
-		opacity: 1;
-		-webkit-transform: translate3d(0,0,0);
-		transform: translate3d(0,0,0);
-	}
 
 
-	
+figure.effect-rollover-line {
+	background: $gray;
+	box-shadow: 0px 2px 12px 0px rgba(50, 50, 50, 0.1);
+}
+
+figure.effect-rollover-line img {
+	max-width: none;
+	width: -webkit-calc(100% + 20px);
+	width: calc(100% + 20px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-10px,0,0);
+	transform: translate3d(-10px,0,0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure.effect-rollover-line:hover img {
+	opacity: 0.4;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-rollover-line h2 {
+	position: relative;
+	overflow: hidden;
+	padding: 1em 0;
+	font-size:20px;
+	font-family: $primary-font;
+	line-height:0.85;
+}
+
+figure.effect-rollover-line h2::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	content: '';
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+}
+
+figure.effect-rollover-line:hover h2::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-rollover-line p {
+	padding: 1em 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+
+figure.effect-rollover-line:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+
+
+
+// Cross Hover
+
+figure.effect-cross {
+	background: $gray;
+	box-shadow: 0px 2px 12px 0px rgba(50, 50, 50, 0.2);
+}
+
+figure.effect-cross img {
+	opacity: 0.9;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-cross figcaption::before {
+	position: absolute;
+	top: 35%;
+	right: 38%;
+	bottom: 35%;
+	left: 38%;
+	box-shadow: 0 0 0 35% rgba(255,255,255,0.2);
+	background:#fff;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale3d(1.4,1.4,1);
+	transform: scale3d(1.4,1.4,1);
+}
+
+figure.effect-cross h2 {
+	margin: 20% 0 10px 0;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+figure.effect-cross p {
+	font-family:$primary-font;
+	font-size:50px;
+	font-weight:800;
+	color:$red;
+	padding: 0.25em;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+figure.effect-cross:hover h2 {
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+figure.effect-cross:hover figcaption::before,
+figure.effect-cross:hover p {
+	opacity: 1;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+
+figure.effect-cross:hover figcaption {
+	background-color: rgba(58,52,42,0);
+}
+
+figure.effect-cross:hover img {
+	opacity: 0.4;
 }
