@@ -1,6 +1,7 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
-
+@import 'display_layer';
+ 	
 
 #homepage {
 	display: none;
@@ -108,5 +109,57 @@ video {
 		.article_link{
 			margin-top:35px;
 		}
+	}
+}
+
+// Collection Section
+
+.collection_sample{
+	position:relative;
+	height:auto;
+	width:100%;
+	margin:150px auto 75px auto;
+	background-color:$lt-gray;
+	
+	.grid_rollover_1{
+		top:-75px;
+		margin-bottom:-100px;
+	}
+
+	.collection_link{
+		top:40px;
+		@extend .link_box;
+		border-color:#fff;
+		color:$red;
+
+		&:hover{
+		color:$black;
+		border-color:$red;
+		}
+	}
+}
+
+// Quote Section
+
+.quote_section{
+	
+	h2{
+		text-align:center;
+		line-height:1.2;
+		color:$gray;
+
+		&:before,
+		&:after { 
+		    content: "\0022";
+		    color:$red;
+		}
+	}
+
+	.quote-by{
+		margin:10px 10px;
+		letter-spacing:1px;
+		text-align:center;
+		font-weight:800;
+		color:$red;
 	}
 }

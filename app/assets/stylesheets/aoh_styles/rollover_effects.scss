@@ -1,0 +1,163 @@
+// Place SCSS & CSS relating to rollover effects here
+@import 'typography';
+
+/* Individual effects */
+
+
+.collection_sample{
+	.grid_rollover_1 {
+		position: relative;
+		margin: 0 auto;
+		padding: 1em 0 4em;
+		max-width: 900px;
+		list-style: none;
+		text-align: center;
+		float:none;
+	}
+
+	/* Common style */
+	.grid_rollover_1 figure {
+		position: relative;
+		float: none;
+		display:inline-block;
+		overflow: hidden;
+		margin: 10px 1%;
+		min-width: 275px;
+		max-width: 275px;
+		max-height: 280px;
+		width: 48%;
+		background: #3085a3;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	.grid_rollover_1 figure img {
+		position: relative;
+		display: block;
+		min-height: 100%;
+		max-width: 100%;
+		opacity: 0.8;
+	}
+
+	.grid_rollover_1 figure figcaption {
+		padding: 2.35em 1em;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 1.25em;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+
+	.grid_rollover_1 figure figcaption::before,
+	.grid_rollover_1 figure figcaption::after {
+		pointer-events: none;
+	}
+
+	.grid_rollover_1 figure figcaption,
+	.grid_rollover_1 figure figcaption > a {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	/* Anchor will cover the whole item by default */
+	/* For some effects it will show as a button */
+	.grid_rollover_1 figure figcaption > a {
+		z-index: 1000;
+		text-indent: 200%;
+		white-space: nowrap;
+		font-size: 0;
+		opacity: 0;
+	}
+
+	.grid_rollover_1 figure h2 {
+		word-spacing: -0.15em;
+		font-weight: 300;
+	}
+
+	.grid_rollover_1 figure h2 span {
+		font-weight: 800;
+	}
+
+	.grid_rollover_1 figure h2,
+	.grid_rollover_1 figure p {
+		margin: 0;
+		text-align:center;
+	}
+
+	.grid_rollover_1 figure p {
+		letter-spacing: 1px;
+		font-size: 12px;
+
+	}
+
+	figure.effect-rollover-line {
+		background: $gray;
+	}
+
+	figure.effect-rollover-line img {
+		max-width: none;
+		width: -webkit-calc(100% + 20px);
+		width: calc(100% + 20px);
+		-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+		transition: opacity 0.35s, transform 0.35s;
+		-webkit-transform: translate3d(-10px,0,0);
+		transform: translate3d(-10px,0,0);
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+
+	figure.effect-rollover-line:hover img {
+		opacity: 0.4;
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+
+	figure.effect-rollover-line h2 {
+		position: relative;
+		overflow: hidden;
+		padding: 1em 0;
+		font-size:20px;
+		font-family: $primary-font;
+		line-height:0.85;
+	}
+
+	figure.effect-rollover-line h2::after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 1px;
+		background: #fff;
+		content: '';
+		-webkit-transition: -webkit-transform 0.35s;
+		transition: transform 0.35s;
+		-webkit-transform: translate3d(-100%,0,0);
+		transform: translate3d(-100%,0,0);
+	}
+
+	figure.effect-rollover-line:hover h2::after {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+
+	figure.effect-rollover-line p {
+		padding: 1em 0;
+		opacity: 0;
+		-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+		transition: opacity 0.35s, transform 0.35s;
+		-webkit-transform: translate3d(100%,0,0);
+		transform: translate3d(100%,0,0);
+	}
+
+	figure.effect-rollover-line:hover p {
+		opacity: 1;
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+
+
+	
+}

@@ -29,7 +29,12 @@ h2{
 	font-size:35px;
 	font-family: $secondary-font;
 	line-height:0.85;
-
+}
+h3{
+	font-size:40px;
+	font-family: $secondary-font;
+	line-height:1.2;
+	color:$gray;
 }
 h5{
 	font-size: 16px;
@@ -42,6 +47,7 @@ p{
 	font-family: $secondary-font;
 	font-size:18px;
 }
+
 
 // Button Styling
 .button{
@@ -63,7 +69,7 @@ p{
 // Header Styling
 
 .article_link,
-.section_header{
+.section_header,{
 	border:solid 3px $red;
 	padding:12px 40px 12px 40px;
 	text-transform:uppercase;
@@ -82,6 +88,20 @@ p{
 		color:$red;
 		border-color:$black;
 	}
+}
+
+// Link Boxes
+
+.link_box{
+	border:solid 3px;
+	padding:12px 40px 12px 40px;
+	text-transform:uppercase;
+	text-align:center;
+	letter-spacing:2px;
+	font-weight:800;
+	font-size:13px;
+	transition:color 0.3s ease-out;
+	z-index:1000;
 }
 
 // Other Elements

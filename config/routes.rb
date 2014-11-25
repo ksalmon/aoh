@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  get 'collections/gallery'
 
   get 'home/index'
+
+  get 'collections/gallery'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
