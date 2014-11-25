@@ -1,7 +1,14 @@
 require 'test_helper'
 
 class ArticlesControllerTest < ActionController::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "should get op-ed" do
+    get :op-ed
+    assert_response :success
+  end
+
+  test "should get intro" do
+    get :intro
+    assert_response :success
+  end
+
 end
