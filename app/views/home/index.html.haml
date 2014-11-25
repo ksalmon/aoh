@@ -109,7 +109,8 @@
                 %p Title of Article
                 %a{:href => "#"} View more
             %figure.effect-rollover-line
-              %img{:alt => "img20", :src => "http://placehold.it/350x250"}/
+              %img
+                = image_tag "vwhite.png"
               %figcaption
                 %h2
                   Asshole
@@ -158,7 +159,22 @@
               %p +
               %a{:href => "#"} View more
 
-      
+      .subscribe_section
+        .container.row
+          .headline.large-12.column
+            %h2 
+              Subscribe Today
+              %span 
+                ENTER YOUR E-MAIL ADDRESS TO GET UPDATES ON NEW ARTICLES…
+          .email_input.large-10.column
+            %input.input_textforum.large-10.column{:name => "firstname", :type => "text", :placeholder => "Enter E-mail Here"}/
+            %input.input_button.large-2.column{:type => "submit", :value => "Submit"}/
+          .social_line.large-10.column
+            %h5 
+              Subscribe Today
+              %span 
+                ENTER YOUR E-MAIL ADDRESS TO GET UPDATES ON NEW ARTICLES…
+      .footer
 
 
 
