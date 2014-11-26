@@ -1,3 +1,79 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'display_layer';
+
+.header_img{
+	width:100%;
+	min-height:450px;
+	background:#888;
+	padding-top:160px;
+	padding-bottom:100px;
+}
+
+.header_text{
+	
+	.big_copy{
+		font-weight:800;
+		letter-spacing:1.8px;
+		font-size:60px;
+		color:$white;
+		margin-bottom:20px;
+		padding-left: 30px ;
+		text-indent: -30px ;
+
+		&:before,
+		&:after { 
+		    content: "\0022";
+		    color:$red;
+		}
+	}
+
+	.small_copy{
+		font-family:$secondary-font;
+		font-style:italic;
+		font-weight:800;
+		font-size:30px;
+		color:$white;
+	}
+}
+
+.article_content{
+
+	.author_info{
+		.image{
+			text-align:center;
+
+			.author_icon{
+				margin-top:-40px;
+				border: 4px solid #fff;
+				border-radius: 150px;
+				-webkit-border-radius: 150px;
+				-moz-border-radius: 150px;
+			}
+		}
+
+		.name{
+			font-family:$primary-font;
+			font-size:11px;
+			font-weight:800;
+			text-transform:uppercase;
+			letter-spacing:0.5px;
+			text-align:center;
+			margin-bottom:4px;
+		}
+		.title{
+			font-family:$secondary-font;
+			font-style:italic;
+			font-size:10px;
+			color:$gray;
+			text-align:center;
+
+		}
+	}
+
+	.copy{
+		height:auto;
+		margin-top:100px;
+	}
+}
