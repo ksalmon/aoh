@@ -73,8 +73,10 @@ video {
 	.section_header{
 		margin-bottom:25px;
 	}
+
 	.featured_section{
 		min-height:300px;
+		
 		.ft_img_1{
 			position: relative;
 			background:#555;
@@ -82,13 +84,12 @@ video {
 			min-height:300px;
 			padding-top:40px;
 			float:left;
-		@media only screen and (max-width: 40em) {
-			width:100%;
+
+			@media only screen and (max-width: 40em) {
+				width:100%;
+			}
 		}
 
-
-			
-		}
 		.ft_img_2{
 			position: relative;
 			background:#999;
@@ -96,6 +97,7 @@ video {
 			min-height:300px;
 			float:right;
 		}
+
 		.featured_copy{
 			color:$white;
 			h2{
