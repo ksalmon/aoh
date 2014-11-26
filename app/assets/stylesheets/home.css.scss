@@ -73,6 +73,62 @@ video {
 	.section_header{
 		margin-bottom:25px;
 	}
+	.featured_section{
+		min-height:300px;
+		.ft_img_1{
+			position: relative;
+			background:#555;
+			width:45%;
+			min-height:300px;
+			padding-top:40px;
+			float:left;
+		@media only screen and (max-width: 40em) {
+			width:100%;
+		}
+
+
+			
+		}
+		.ft_img_2{
+			position: relative;
+			background:#999;
+			width:55%;
+			min-height:300px;
+			float:right;
+		}
+		.featured_copy{
+			color:$white;
+			h2{
+				color:$white;
+				font-size:40px;
+				margin-bottom:10px;
+
+			}
+			p{
+				margin-bottom:20px;
+			}
+			.simple_link{
+				font-size:11px;
+				font-weight:800;
+				letter-spacing:1.8px;
+				padding-bottom:5px;
+				border-bottom:2px solid $white;
+				color:$white;
+				transition:color 0.3s ease-out;
+
+
+				&:hover{
+					color:$red;
+				}
+			}
+			.post_date{
+				font-family:$note-font;
+				font-size:14px;
+				letter-spacing:1.8px;
+				line-height:normal;
+			}
+		}
+	}
 }
 .featured_copy{
 	
