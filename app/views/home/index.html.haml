@@ -109,8 +109,7 @@
                 %p Title of Article
                 %a{:href => "#"} View more
             %figure.effect-rollover-line
-              %img
-                = image_tag "vwhite.png"
+              %img{:alt => "img20", :src => "http://placehold.it/350x250"}/
               %figcaption
                 %h2
                   Asshole
@@ -140,20 +139,20 @@
         .section_header.large-3 MERCHANDISE
         .grid_rollover_1
           %figure.effect-cross
-            %img{:alt => "img09", :src => "http://placehold.it/350x250"}/
+            %img{:alt => "img08", :src => "/images/vwhite.png"}/
             %figcaption
               
               %p +
               %a{:href => "#"} View more
           %figure.effect-cross
-            %img{:alt => "img08", :src => "http://placehold.it/350x250"}/
+            %img{:alt => "img08", :src => "/images/vwhite.png"}/
             %figcaption
              
               %p +
               %a{:href => "#"} View more
 
           %figure.effect-cross
-            %img{:alt => "img08", :src => "http://placehold.it/350x250"}/
+            %img{:alt => "img08", :src => "/images/vwhite.png"}/
             %figcaption
               
               %p +
@@ -166,15 +165,26 @@
               Subscribe Today
               %span 
                 ENTER YOUR E-MAIL ADDRESS TO GET UPDATES ON NEW ARTICLES…
-          .email_input.large-10.column
+          .email_input.large-10.right.column
             %input.input_textforum.large-10.column{:name => "firstname", :type => "text", :placeholder => "Enter E-mail Here"}/
             %input.input_button.large-2.column{:type => "submit", :value => "Submit"}/
-          .social_line.large-10.column
+          .social_line.large-12
             %h5 
-              Subscribe Today
+              OR FOLLOW US ON TWITTER, FACEBOOK OR INSTAGRAM
               %span 
-                ENTER YOUR E-MAIL ADDRESS TO GET UPDATES ON NEW ARTICLES…
+                
       .footer
+        .info.large-12.row
+          %a{:href => "#"} 
+            Contact Us
+          %span 
+            |
+          %a{:href => "#"} 
+            Sources
+
+
+
+
 
 
 

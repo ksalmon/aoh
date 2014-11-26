@@ -181,7 +181,7 @@ video {
 	margin:125px auto 0px auto;
 	width:100%;
 	height:380px;
-	background:$lt-gray;
+	background:url(/images/vwhite.png);
 
 	.container{
 		position:relative;
@@ -197,15 +197,17 @@ video {
 				font-family:$primary-font;
 				font-weight:600;
 				padding-left:10px;
+				letter-spacing:1.8px;
 				border-left:1px solid #fff;
-				font-size:14px;
+				font-size:13px;
 				vertical-align: middle;
 			}
 		}
 
 
 		.email_input{
-			margin:35px auto 50px auto;
+			margin:35px auto 35px auto;
+
 			.input_textforum{
 				border:solid 3px $white;
 				background:none;
@@ -247,9 +249,15 @@ video {
 					color:$white;
 				}
 			}
+		}
+		.social_line{
+			h5{
+				color:$white;
+				font-size:13px;
+				font-weight:600;
+				float:right;
 
-			
-
+			}
 		}
 	}
 }
@@ -259,4 +267,22 @@ video {
 	width:100%;
 	height:50px;
 	background:$black;
+	padding:45px 0 0 0;
+
+	a{
+		font-size:11px;
+		text-transform:uppercase;
+		letter-spacing:1.2px;
+		color:$white;
+		transition:color 0.3s ease-out;
+		padding:0 5px 0 5px;
+		vertical-align: middle;
+
+		&:hover{
+			color:$red;
+		}
+	}
+	span{
+		color:$white;
+	}
 }
