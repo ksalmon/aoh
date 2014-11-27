@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'gallery/collection'
+
   get 'articles/intro'
 
   get 'home/index'
