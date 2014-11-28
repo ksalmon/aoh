@@ -1,9 +1,11 @@
-%body
+%body.articles
   #homepage
   #st-container.st-container
-    /
-      example menus
-      these menus will be on top of the push wrapper
+    .svg-wrap
+      %svg{:height => "64", :viewBox => "0 0 64 64", :width => "64"}
+        %path#arrow-left-1{:d => "M46.077 55.738c0.858 0.867 0.858 2.266 0 3.133s-2.243 0.867-3.101 0l-25.056-25.302c-0.858-0.867-0.858-2.269 0-3.133l25.056-25.306c0.858-0.867 2.243-0.867 3.101 0s0.858 2.266 0 3.133l-22.848 23.738 22.848 23.738z"}/
+      %svg{:height => "64", :viewBox => "0 0 64 64", :width => "64"}
+        %path#arrow-right-1{:d => "M17.919 55.738c-0.858 0.867-0.858 2.266 0 3.133s2.243 0.867 3.101 0l25.056-25.302c0.858-0.867 0.858-2.269 0-3.133l-25.056-25.306c-0.858-0.867-2.243-0.867-3.101 0s-0.858 2.266 0 3.133l22.848 23.738-22.848 23.738z"}/
     %nav#menu.st-menu.st-effect
       %h2.icon.icon-stack Assholes of History
       %ul
@@ -29,37 +31,83 @@
             %i.icon-shop
             %span Store
     .st-pusher
-  
-        
+      .header_img
+        .header_text.row
+          .big_copy.large-12.column THE PLANET IS FINE. <br/> THE PEOPLE ARE FUCKED.
+          .small_copy.large-4.right.column  &ndash; George Carlin
 
-        
+      
+        .container
+          / Top Navigation
+          %section.color-5
+            %nav.nav-circleslide
+              %a.prev{:href => "/item1"}
+                %span.icon-wrap
+                  %svg.icon{:height => "32", :viewBox => "0 0 64 64", :width => "32"}
+                    %use{"xlink:href" => "#arrow-left-1"}/
+                %div
+                  %img
+                    = image_tag "author1.jpg"
+              %a.next{:href => "/item3"}
+                %span.icon-wrap
+                  %svg.icon{:height => "32", :viewBox => "0 0 64 64", :width => "32"}
+                    %use{"xlink:href" => "#arrow-right-1"}/
+                %div
+                  %img
+                    = image_tag "author1.jpg"
+    
       .main.clearfix
         .row#st-trigger-effects
           %a.main-nav{"data-effect" => "st-effect"}
             %i.icon-nav_burger
-
-        
       
-        
-        .section_break
+
+      .article_content.row
+        .author_info.large-2.column
+          .image.large-12
+            = image_tag "author1.jpg", size: "80x80", class: "author_icon"  
+          .name.large-12.large-centered Kyle Salmon 
+          .title.large-12.large-centered Asshole Editor
+
         .article.row
-          .title.row.text-center
-            %h2 With Great Power...
-            %h5 Op-Ed Article
           .copy.large-11.large-centered.column
-            %p.large-6.column 
-              = image_tag "author1.jpg", size: "80x80", class: "author_icon"  
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Abore et dolore magna aliqua. Lorem ipsum dolor sit amet, con. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Abore et dolore magna aliqua. Lorem ipsum dolor sit amet, con. Lorem ipsum dolor.
+            .title.text-center
+              %h2 With Great Power...
+              %h5 Op-Ed Article
+            %p.large-6.column  
+              The great pessimist, Thomas
+              Hobbes based his entire life to
+              the greater understanding of the
+              war and turmoil that mankind
+              has made for itself. Hobbes is famous for his
+              firm concept that men are born greedy, or
+              selfish. Stating that all humans would stoop to
+              certain levels of evil in order to place them in
+              a favorable position above others.
            
             %p.large-6.column  
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Abore et dolore magna aliqua. Lorem ipsum dolor sit amet, con. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Abore et dolore magna aliqua. Lorem ipsum dolor sit amet, con. Lorem ipsum dolor.
+              As a English philosopher, he explored the idea
+              of social contact, or the authority that state
+              has over an individual. He was fascinated
+              by how people allow themselves to become
+              controlled or ruled by a central government.
+              However, Hobbes theories seem contradicting
+              at a certain point.
             .byline.large-6.text-right.column - By Kyle Salmon
           
             %a.article_link.column.small-2.pull-5 Read More
-      .section_break
+      .footer{:style => "margin-top:100px;"}
+        .row
+          .info.large-12.column
+            %a{:href => "#"} 
+              Contact Us
+            %span 
+              |
+            %a{:href => "#"} 
+              Sources
 
-                  
-                              
+
+      
 
 
 

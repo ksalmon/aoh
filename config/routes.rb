@@ -1,12 +1,15 @@
 Rails.application.routes.draw do
 
-  get 'gallery/collection'
 
-  get 'articles/intro'
+  # Get Files
 
   get 'home/index'
+  get 'articles/intro'
+  get 'gallery/collection'
+  
 
-  get 'collections/gallery'
+  # Individual Asshole Articles
+  get 'collections/putin'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
