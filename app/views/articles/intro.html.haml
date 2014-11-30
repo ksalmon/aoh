@@ -1,5 +1,5 @@
 %body.articles
-  #homepage
+  
   #st-container.st-container
     .svg-wrap
       %svg{:height => "64", :viewBox => "0 0 64 64", :width => "64"}
@@ -7,10 +7,10 @@
       %svg{:height => "64", :viewBox => "0 0 64 64", :width => "64"}
         %path#arrow-right-1{:d => "M17.919 55.738c-0.858 0.867-0.858 2.266 0 3.133s2.243 0.867 3.101 0l25.056-25.302c0.858-0.867 0.858-2.269 0-3.133l-25.056-25.306c-0.858-0.867-2.243-0.867-3.101 0s-0.858 2.266 0 3.133l22.848 23.738-22.848 23.738z"}/
     %nav#menu.st-menu.st-effect
-      %h2.icon.icon-stack Assholes of History
+      %h2.icon.icon-stack
       %ul
         %li
-          %a{:href => "#"} 
+          %a{:href => "/"} 
             %i.icon-home
             %span Home
         %li
@@ -31,30 +31,33 @@
             %i.icon-shop
             %span Store
     .st-pusher
-      .header_img
+      .header_img{:style => "background:url(/images/putin/riot1.jpg); background-position:center; background-size:cover;"}
         .header_text.row
-          .big_copy.large-12.column THE PLANET IS FINE. <br/> THE PEOPLE ARE FUCKED.
-          .small_copy.large-4.right.column  &ndash; George Carlin
-
+          .big_copy.large-12.column One of the best ways to achieve justice, is to expose injustice.
+          .small_copy.large-4.right.column  &ndash; Julian Assange
       
         .container
           / Top Navigation
           %section.color-5
             %nav.nav-circleslide
-              %a.prev{:href => "/item1"}
+
+
+              %a.prev{:href => "/articles/hobbes"}
                 %span.icon-wrap
                   %svg.icon{:height => "32", :viewBox => "0 0 64 64", :width => "32"}
                     %use{"xlink:href" => "#arrow-left-1"}/
                 %div
                   %img
-                    = image_tag "author1.jpg"
-              %a.next{:href => "/item3"}
+                    = image_tag "author2.jpg"
+
+
+              %a.next{:href => "/articles/hobbes"}
                 %span.icon-wrap
                   %svg.icon{:height => "32", :viewBox => "0 0 64 64", :width => "32"}
                     %use{"xlink:href" => "#arrow-right-1"}/
                 %div
                   %img
-                    = image_tag "author1.jpg"
+                    = image_tag "author2.jpg"
     
       .main.clearfix
         .row#st-trigger-effects
@@ -72,31 +75,32 @@
         .article.row
           .copy.large-11.large-centered.column
             .title.text-center
-              %h2 With Great Power...
-              %h5 Op-Ed Article
+              %h2 Pick on the Big Guy
+              %h5 An Introduction
             %p.large-6.column  
-              The great pessimist, Thomas
-              Hobbes based his entire life to
-              the greater understanding of the
-              war and turmoil that mankind
-              has made for itself. Hobbes is famous for his
-              firm concept that men are born greedy, or
-              selfish. Stating that all humans would stoop to
-              certain levels of evil in order to place them in
-              a favorable position above others.
+              I find in incredibly ironic for a person to create a publication dedicated to exposing humans for being assholes, yet here I am. As an online publisher it should be in my best interest to supply readers with nothing but unbiased and pure pieces of education, from there you can break down such information and create your own clean cut opinions after analyzing what was read.  So ideally in a perfect world it shouldn't be the author that creates favoritism, its the readers job to do so. That being said I do understand that the collection of beings that belong to this online publication have been selected from a form of unfairness. 
+
            
             %p.large-6.column  
-              As a English philosopher, he explored the idea
-              of social contact, or the authority that state
-              has over an individual. He was fascinated
-              by how people allow themselves to become
-              controlled or ruled by a central government.
-              However, Hobbes theories seem contradicting
-              at a certain point.
+              The purpose of this is to not only expose these human beings but to also touch on some underlying feelings of acceptance that the world has for them. People have used ignorance and turned that into tolerance. To open eyes to the concept of greed and hatred from around the world will in turn only benefit the lives in which those evils directly effect.
             .byline.large-6.text-right.column - By Kyle Salmon
           
-            %a.article_link.column.small-2.pull-5 Read More
-      .footer{:style => "margin-top:100px;"}
+          
+      .subscribe_section
+        .container.row
+          .headline.large-12.column
+            %h2 
+              Subscribe Today
+              %span 
+                ENTER YOUR E-MAIL ADDRESS TO GET UPDATES ON NEW ARTICLES…
+          .email_input.large-10.right.column
+            %input.input_textforum.large-10.column{:name => "firstname", :type => "text", :placeholder => "Enter E-mail Here"}/
+            %input.input_button.large-2.column{:type => "submit", :value => "Submit"}/
+          .social_line.large-12
+            %h5 
+              OR FOLLOW US ON TWITTER, FACEBOOK OR INSTAGRAM
+              %span 
+      .footer
         .row
           .info.large-12.column
             %a{:href => "#"} 
@@ -111,7 +115,7 @@
 
 
 
-#loading
+
 
 :javascript
   // Sidebar Effect

@@ -1,29 +1,33 @@
 %body
-  #homepage
+  
   #st-container.st-container
     /
       example menus
       these menus will be on top of the push wrapper
     %nav#menu.st-menu.st-effect
-      %h2.icon.icon-stack Assholes of History
+      %h2.icon.icon-stack 
       %ul
         %li
-          %a{:href => "#"} 
+          %a{:href => "/"} 
             %i.icon-home
             %span Home
+
         %li
-          %a{:href => "#"} 
+          %a{:href => "/collections/putin"}
             %i.icon-featured
             %span Featured
+      
         %li
-          %a{:href => "/gallery/collection"} 
+          %a{:href => "/gallery/collection"}
+            -link_to gallery_collection_path 
             %i.icon-collection
             %span Collection 
               
         %li
-          %a{:href => "#"} 
+          %a{:href => "/articles/intro"}
             %i.icon-about
-            %span About
+            %span Articles
+            
         %li
           %a{:href => "#"} 
             %i.icon-shop
@@ -53,7 +57,8 @@
           .row
             .section_header.large-3.column Featured Article
           .featured_section
-            .ft_img_1
+            .ft_img_1{:style => "background:url(/images/kanye1.jpg); background-position:center;"}
+              .color_layer
               .featured_copy.row.large-12
                 .large-10.medium-12.right.column 
                   %h2 Kanye West
@@ -62,10 +67,10 @@
                     to todays pop-culture. No one will deny his
                     success throughout his career as a rap artist, but
                     he seems to find it very...
-                  %a.simple_link 
+                  %a.simple_link{:href => "/collections/putin"}
                     VIEW THE FULL ARTICLE
                   %span.post_date.right.hide-for-small-down POSTED // 12/02/14
-            .ft_img_2.show-for-medium-up
+            .ft_img_2.show-for-medium-up{:style => "background:url(/images/kanye2.jpg); background-position:center;"}
             
 
         .section_break
@@ -97,7 +102,7 @@
               at a certain point.
             .byline.large-6.text-right.column - By Kyle Salmon
           
-            %a.article_link.column.small-2.pull-5 Read More
+            %a.article_link.column.small-2.pull-5{:href => "/articles/intro"} Read More
 
         .section_break
 
@@ -128,7 +133,7 @@
                 %p Title of Article
                 %a{:href => "#"} View more
             .row.large-12
-              %a.collection_link.large-4.small-10.large-centered.small-centered.column{:href => "#"} VIEW ENTIRE COLLECTION
+              %a.collection_link.large-4.small-10.large-centered.small-centered.column{:href => "/gallery/collection"} VIEW ENTIRE COLLECTION
 
       .quote_section.row
         .quote_body.large-10.large-centered.column
@@ -192,7 +197,7 @@
 
 
 
-#loading
+
 
 :javascript
   // Sidebar Effect

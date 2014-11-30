@@ -7,6 +7,10 @@ Rails.application.routes.draw do
   get 'articles/intro'
   get 'gallery/collection'
   
+  # Individual Op-Ed Articles
+  get 'articles/intro'
+  get 'articles/hobbes'
+
 
   # Individual Asshole Articles
   get 'collections/putin'

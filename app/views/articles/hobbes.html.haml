@@ -1,4 +1,4 @@
-%body
+%body.articles
   
   #st-container.st-container
     .svg-wrap
@@ -7,7 +7,7 @@
       %svg{:height => "64", :viewBox => "0 0 64 64", :width => "64"}
         %path#arrow-right-1{:d => "M17.919 55.738c-0.858 0.867-0.858 2.266 0 3.133s2.243 0.867 3.101 0l25.056-25.302c0.858-0.867 0.858-2.269 0-3.133l-25.056-25.306c-0.858-0.867-2.243-0.867-3.101 0s-0.858 2.266 0 3.133l22.848 23.738-22.848 23.738z"}/
     %nav#menu.st-menu.st-effect
-      %h2.icon.icon-stack Assholes of History
+      %h2.icon.icon-stack
       %ul
         %li
           %a{:href => "#"} 
@@ -30,21 +30,25 @@
           %a{:href => "#"} 
             %i.icon-shop
             %span Store
-    .st-pusher.asshole
-      .header_img
-        
+    .st-pusher
+      .header_img{:style => "background:url(/images/saddam/kuwait_oilfire.jpg); background-position:center; background-size:cover;"}
+        .header_text.row
+          .big_copy.large-12.column THE PLANET IS FINE. <br/> THE PEOPLE ARE FUCKED.
+          .small_copy.large-4.right.column  &ndash; George Carlin
+
+      
         .container
           / Top Navigation
           %section.color-5
             %nav.nav-circleslide
-              %a.prev{:href => "/item1"}
+              %a.prev{:href => "/articles/intro"}
                 %span.icon-wrap
                   %svg.icon{:height => "32", :viewBox => "0 0 64 64", :width => "32"}
                     %use{"xlink:href" => "#arrow-left-1"}/
                 %div
                   %img
                     = image_tag "author1.jpg"
-              %a.next{:href => "/item3"}
+              %a.next{:href => "/articles/intro"}
                 %span.icon-wrap
                   %svg.icon{:height => "32", :viewBox => "0 0 64 64", :width => "32"}
                     %use{"xlink:href" => "#arrow-right-1"}/
@@ -59,148 +63,29 @@
       
 
       .article_content.row
-        .large-11.large-centered.column
-          .author_info.large-2.column.right
-            .image.large-12
-              = image_tag "author1.jpg", size: "80x80", class: "author_icon"  
-            .name.large-12.large-centered Kyle Salmon 
-            .title.large-12.large-centered Asshole Editor
+        .author_info.large-2.column
+          .image.large-12
+            = image_tag "author2.jpg", size: "80x80", class: "author_icon"  
+          .name.large-12.large-centered Kendall Cuthie 
+          .title.large-12.large-centered Designer | Writer
 
-          .article_heading.large-5.left.column
-            %h2 Name of Asshole
-            %h5 Position
+        .article.row
+          .copy.large-11.large-centered.column
+            .title.text-center
+              %h2 With Great Power...
+              %h5 Op-Ed Article
 
-            %h6
-              Born on 
-              %span
-                Month & Date
-              in
-              %span
-                Location
+            %p.large-6.column  
+              The great pessimist, Thomas Hobbes based his entire life to the greater understanding of the war and turmoil that mankind has made for itself. Hobbes is famous for his firm concept that men are born greedy, or selfish. Stating that all humans would stoop to certain levels of evil in order to place them in a favorable position above others.
+              As a English philosopher, he explored the idea of social contact, or the authority that state has over an individual. He was fascinated by how people allow themselves to become controlled or ruled by a central government. However, Hobbes theories seem contradicting at a certain point.  On one hand Hobbes believes that because of the harsh intention of human nature, people should have a firm central government, like a king that will make all 
 
-
-
-        .row
-          .article
-            .copy.large-11.large-centered.column
-              .title.text-center
-
-              .large-6.column
-                .article_ah_title
-                  THE GRAY CARDINAL WITH THREE LIVES
-                %p 
-                  The great pessimist, Thomas
-                  Hobbes based his entire life to
-                  the greater understanding of the
-                  war and turmoil that mankind
-                  has made for itself. Hobbes is famous for his
-                  firm concept that men are born greedy, or
-                  selfish. Stating that all humans would stoop to
-                  certain levels of evil in order to place them in
-                  a favorable position above others. has made for itself. Hobbes is famous for his
-                  firm concept that men are born greedy, or
-                  selfish. Stating that all humans would stoop to
-                  certain levels of evil in order to place them in
-                  a favorable position above others.
-             
-              .large-6.column  
-                .image
-                  = image_tag "author1.jpg", size: "800x800"  
-
-              .large-6.column  
-                .image
-                  = image_tag "author1.jpg", size: "800x800"  
-
-
-                .quote_container
-                  %h2 
-                    “Those who
-                    fight corruption
-                    should be clean
-                    themselves.”
-
-              %p.large-6.column  
-                The great pessimist, Thomas
-                Hobbes based his entire life to
-                the greater understanding of the
-                war and turmoil that mankind
-                has made for itself. Hobbes is famous for his
-                firm concept that men are born greedy, or
-                selfish. Stating that all humans would stoop to
-                certain levels of evil in order to place them in
-                a favorable position above others. has made for itself. Hobbes is famous for his
-                firm concept that men are born greedy, or
-                selfish. Stating that all humans would stoop to
-                certain levels of evil in order to place them in
-                a favorable position above others.
-                firm concept that men are born greedy, or
-                selfish. Stating that all humans would stoop to
-                certain levels of evil in order to place them in
-                a favorable position above others.
-                a favorable position above others.
-                firm concept that men firm concept that men are born greedy, or
-                selfish. Stating that all humans would stoop to
-                certain levels of evil in order to place them in
-                a favorable position above others. has made for itself. Hobbes is famous for his
-                firm concept that men are born greedy, or
-                l in order to place them in
-                a favorable position above others.
-                a favorable position above others.
-                firm concept that men
-             
-                .large-6.column  
-                  .image{:style => "background:url(/images/vwhite.png); height:300px;"}
-                   
-                      
-              
-              .large-6.column 
-                .article_ah_title
-                  THE GRAY CARDINAL WITH THREE LIVES 
-                %p
-                  The great pessimist, Thomas
-                  Hobbes based his entire life to
-                  the greater understanding of the
-                  war and turmoil that mankind
-                  has made for itself. Hobbes is famous for his
-                  firm concept that men are born greedy, or
-                  selfish. Stating that all humans would stoop to
-                  certain levels of evil in order to place them in
-                  a favorable position above others. has made for itself. Hobbes is famous for his
-                  firm concept that men are born greedy, or
-                  selfish. Stating that all humans would stoop to
-                  certain levels of evil in order to place them in
-                  a favorable position above others.
-                  firm concept that men are born greedy, or
-                  selfish. Stating that all humans would stoop to
-                  certain levels of evil in order to place them in
-                  a favorable position above others.
+           
+            %p.large-6.column  
+              decisions for the population.  He disliked the base of a Democracy, seeing that the general public couldn’t be trusted to make the right and moral decisions that a government has control over. On the other hand we still have to make an effort to see that the one in charge is stable to lead without moral weakness.  This is where Hobbes direction seems unclear, he is confident in the overwhelming evil of mankind yet he believes in the sanction of a single ruler.
+            .byline.large-6.text-right.column - By Kendall Cuthie
             
-              
-
-      .section_break
-      .merch_section.row
-        .section_header.large-3 MERCHANDISE
-        .grid_rollover_1
-          %figure.effect-cross
-            %img{:alt => "img08", :src => "/images/vwhite.png"}/
-            %figcaption
-              
-              %p +
-              %a{:href => "#"} View more
-          %figure.effect-cross
-            %img{:alt => "img08", :src => "/images/vwhite.png"}/
-            %figcaption
-             
-              %p +
-              %a{:href => "#"} View more
-
-          %figure.effect-cross
-            %img{:alt => "img08", :src => "/images/vwhite.png"}/
-            %figcaption
-              
-              %p +
-              %a{:href => "#"} View more
-      .section_break
+          
+          
       .subscribe_section
         .container.row
           .headline.large-12.column
@@ -215,7 +100,7 @@
             %h5 
               OR FOLLOW US ON TWITTER, FACEBOOK OR INSTAGRAM
               %span 
-      .footer{:style => "margin-top:100px;"}
+      .footer
         .row
           .info.large-12.column
             %a{:href => "#"} 
