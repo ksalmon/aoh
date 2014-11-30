@@ -17,6 +17,7 @@
 	width:35%;
 	background:$white;
 	padding-top: 17%;
+	z-index:99999;
 
 	h2{
 		border-bottom:3px solid $lt-gray;
@@ -35,9 +36,10 @@
 }
 
 .char_container{
-	height:auto;
+	height:100%;
 	width:65%;
 	background:$red;
+	height:100%;
 }
 
 .arrow{

@@ -7,27 +7,31 @@
       %svg{:height => "64", :viewBox => "0 0 64 64", :width => "64"}
         %path#arrow-right-1{:d => "M17.919 55.738c-0.858 0.867-0.858 2.266 0 3.133s2.243 0.867 3.101 0l25.056-25.302c0.858-0.867 0.858-2.269 0-3.133l-25.056-25.306c-0.858-0.867-2.243-0.867-3.101 0s-0.858 2.266 0 3.133l22.848 23.738-22.848 23.738z"}/
     %nav#menu.st-menu.st-effect
-      %h2.icon.icon-stack Assholes of History
+      %h2.icon.icon-stack 
       %ul
         %li
-          %a{:href => "#"} 
+          %a{:href => "/"} 
             %i.icon-home
             %span Home
+
         %li
-          %a{:href => "#"} 
+          %a{:href => "/collections/putin"}
             %i.icon-featured
             %span Featured
+      
         %li
-          %a{:href => "/collections/gallery"} 
+          %a{:href => "/gallery/collection"}
+            -link_to gallery_collection_path 
             %i.icon-collection
             %span Collection 
               
         %li
-          %a{:href => "#"} 
+          %a{:href => "/articles/intro"}
             %i.icon-about
-            %span About
+            %span Articles
+            
         %li
-          %a{:href => "#"} 
+          %a{:href => "/store/index"} 
             %i.icon-shop
             %span Store
     .st-pusher
@@ -42,7 +46,7 @@
 
       // Right Container
 
-      #scroll.char_container.right
+      .char_container.right
         .arrow
           = image_tag "arrow.svg"
         

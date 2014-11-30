@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  get 'store/index'
+
   # Get Files
 
   get 'home/index'
