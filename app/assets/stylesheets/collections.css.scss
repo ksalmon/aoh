@@ -17,35 +17,58 @@
 
 		h6{
 			font-family:$primary-font;
-			font-size:18px;
-			font-weight:400;
+			font-size:16px;
+			font-weight:600;
 			color:$gray;
 			text-transform:initial;
-			letter-spacing:0.4px;
+			letter-spacing:0.2px;
 			margin-top:40px;
 
 			span{
-				font-weight:600;
+				font-weight:800;
 				color:$black;
 			}
 		}
 	}
-	.article{
+	.start{
 		margin-top:200px;
+	}
+	.ah_article{
 
-		.image{
-			background-size:cover;
-			background-position:center;
+		.float_right{
+			float:right;
+			margin-top:20px;
+			margin-bottom:20px;
+			margin-left:20px;
 		}
-		
+
+		.float_left{
+			float:left;
+			margin-top:20px;
+			margin-bottom:20px;
+			margin-right:20px;
+
+
+		}
+
+		.left_col{
+			margin-bottom:100px;
+		}
+
+
+		p{
+			text-indent: 30px;
+			margin-top:10px;
+		}
 
 		.article_ah_title{
 			font-family:$note-font;
-			font-size:50px;
+			font-size:45px;
 			text-transform:uppercase;
 			color:#222;
 			letter-spacing:1px;
-
+			margin-bottom:20px;
+			margin-top:20px;
 		}
 
 		.quote_container{
@@ -53,10 +76,12 @@
 			height:auto;
 			padding:40px 40px 32px 40px;
 			margin-top:20px;
+			margin-bottom:20px;
 
 			h2{
 				line-height:1.2;
-			    text-indent: -15px ;
+			    text-indent: -15px;
+
 			}
 		}
 	}
