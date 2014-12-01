@@ -73,6 +73,7 @@
 	.grid_rollover_1 figure h2 {
 		word-spacing: -0.15em;
 		font-weight: 300;
+		color:rgba(255,255,255,1);
 	}
 
 	.grid_rollover_1 figure h2 span {
@@ -108,10 +109,11 @@ figure.effect-rollover-line img {
 	transform: translate3d(-10px,0,0);
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+	opacity: 0.6;
 }
 
 figure.effect-rollover-line:hover img {
-	opacity: 0.4;
+	opacity: 0.2;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
