@@ -35,7 +35,7 @@
             %i.icon-shop
             %span Store
     .st-pusher.asshole
-      .header_img
+      .header_img{:style => "background:url(/images/putin/ukraine_riot2.jpg); background-position:center; background-size:cover;"}
         
         .container
           / Top Navigation
@@ -47,14 +47,14 @@
                     %use{"xlink:href" => "#arrow-left-1"}/
                 %div
                   %img
-                    = image_tag "author1.jpg"
+                    = image_tag "profile/putin.jpg"
               %a.next{:href => "/item3"}
                 %span.icon-wrap
                   %svg.icon{:height => "32", :viewBox => "0 0 64 64", :width => "32"}
                     %use{"xlink:href" => "#arrow-right-1"}/
                 %div
                   %img
-                    = image_tag "author1.jpg"
+                    = image_tag "profile/putin.jpg"
     
       .main.clearfix
         .row#st-trigger-effects
@@ -71,113 +71,114 @@
             .title.large-12.large-centered Asshole Editor
 
           .article_heading.large-5.left.column
-            %h2 Name of Asshole
-            %h5 Position
+            %h2 Vladimir Putin
+            %h5 President of Russia
 
             %h6
               Born on 
               %span
-                Month & Date
+                October 7, 1952
               in
               %span
-                Location
+                Leningrad, Russia
 
 
 
         .row
-          .article
-            .copy.large-11.large-centered.column
-              .title.text-center
-
-              .large-6.column
+          .ah_article.start
+            .body_copy.large-11.large-centered.column
+              // Left Column
+              .left_col.large-12.column
+                .float_right.large-4.show-for-medium-up
+                  = image_tag "profile/putin.jpg"
                 .article_ah_title
                   THE GRAY CARDINAL WITH THREE LIVES
+
+                %p
+                  Russian government has never quite recovered from the destruction caused by the fall of the Soviet Union. Its inconsistency in the government presence has left a transparent view for the world to understand that Russian leaders have been far from trustworthy. President Putin has made this case very clear due to prior issues that western media have touched on in the past four years.
+
+                .float_right.large-4.hide-for-medium-up
+                  = image_tag "profile/putin.jpg"
+
+                  
+                %p
+                  After completing college from Leningrad State University from where his family resided, Putin started his career as a KGB intelligence officer that he held until right before the collapse of the Soviet Union in 1991. The KGB, which real meaning translates to the “Committee for State Security” was a security agency that was built for the Soviet Union in 1954. Agents acted as internal security, intelligence and a covert police force for the ground to protect Russia from external and internal affairs. After the fall of the central government, Putin, now a colonel in the KGB would return home to explore further options in politics in supporting a liberal politician who would later win the election, granting Putin a step into Russian government.
+
+                .float_left.large-5
+                  = image_tag "putin/riot1.jpg"
+
                 %p 
-                  The great pessimist, Thomas
-                  Hobbes based his entire life to
-                  the greater understanding of the
-                  war and turmoil that mankind
-                  has made for itself. Hobbes is famous for his
-                  firm concept that men are born greedy, or
-                  selfish. Stating that all humans would stoop to
-                  certain levels of evil in order to place them in
-                  a favorable position above others. has made for itself. Hobbes is famous for his
-                  firm concept that men are born greedy, or
-                  selfish. Stating that all humans would stoop to
-                  certain levels of evil in order to place them in
-                  a favorable position above others.
-             
-              .large-6.column  
-                .image
-                  = image_tag "author1.jpg", size: "800x800"  
+                  In 1999 the current president, Boris Yeltsin resigned and appointed Putin to continue as president of Russia until the upcoming elections. Putin was then re-elected in 2004 due to the uproar of September 11, Putin used the media to present a firm response to the terrorist threats, which would later help him win his second election.
 
-              .large-6.column  
-                .image
-                  = image_tag "author1.jpg", size: "800x800"  
+                
 
+                %p 
+                  In march 2008, Putin would be secured to Russian’s prime minister, but then miraculously was re-re-elected into his third term of presidency, despite Russia’s two-term limit. Unfortunately, this is due to the persistent myth that Russia’s constitution is nothing more then a meaningless document that Mr. Putin overcame to achieve a unyielding central power. Putin exercised his power to engage above the systems of executive, legislative and judicial power. Although completely legal when looked at on paper, it was looked at as a huge violation of control.
 
-                .quote_container
+                .float_right.large-6.quote_container
                   %h2 
                     “Those who
                     fight corruption
                     should be clean
                     themselves.”
 
-              %p.large-6.column  
-                The great pessimist, Thomas
-                Hobbes based his entire life to
-                the greater understanding of the
-                war and turmoil that mankind
-                has made for itself. Hobbes is famous for his
-                firm concept that men are born greedy, or
-                selfish. Stating that all humans would stoop to
-                certain levels of evil in order to place them in
-                a favorable position above others. has made for itself. Hobbes is famous for his
-                firm concept that men are born greedy, or
-                selfish. Stating that all humans would stoop to
-                certain levels of evil in order to place them in
-                a favorable position above others.
-                firm concept that men are born greedy, or
-                selfish. Stating that all humans would stoop to
-                certain levels of evil in order to place them in
-                a favorable position above others.
-                a favorable position above others.
-                firm concept that men firm concept that men are born greedy, or
-                selfish. Stating that all humans would stoop to
-                certain levels of evil in order to place them in
-                a favorable position above others. has made for itself. Hobbes is famous for his
-                firm concept that men are born greedy, or
-                l in order to place them in
-                a favorable position above others.
-                a favorable position above others.
-                firm concept that men
-             
-                .large-6.column  
-                  .image{:style => "background:url(/images/vwhite.png); height:300px;"}
-                   
-                      
-              
-              .large-6.column 
+                  
+                // Last Paragraph
+                %p 
+                  Putin has since then used Russia’s weak policies to crippling the country’s parliamentary power and regulating a iron fist over the countries media sources. Putin has also been said that he might run for the upcoming 2018 election. If elected for his forth term, Putin would be in power for almost a quarter of a century which would make him Russia longest-serving leader since the age of Josef Stalin, the father of communism in former Soviet Russia.
+
+              .left_col.large-12.column
+                .float_left.large-6
+                  = image_tag "putin/ukraine_riot1.jpg"
                 .article_ah_title
-                  THE GRAY CARDINAL WITH THREE LIVES 
+                  Issues With Ukraine
+
                 %p
-                  The great pessimist, Thomas
-                  Hobbes based his entire life to
-                  the greater understanding of the
-                  war and turmoil that mankind
-                  has made for itself. Hobbes is famous for his
-                  firm concept that men are born greedy, or
-                  selfish. Stating that all humans would stoop to
-                  certain levels of evil in order to place them in
-                  a favorable position above others. has made for itself. Hobbes is famous for his
-                  firm concept that men are born greedy, or
-                  selfish. Stating that all humans would stoop to
-                  certain levels of evil in order to place them in
-                  a favorable position above others.
-                  firm concept that men are born greedy, or
-                  selfish. Stating that all humans would stoop to
-                  certain levels of evil in order to place them in
-                  a favorable position above others.
+                  Russian government has never quite recovered from the destruction caused by the fall of the Soviet Union. Its inconsistency in the government presence has left a transparent view for the world to understand that Russian leaders have been far from trustworthy. President Putin has made this case very clear due to prior issues that western media have touched on in the past four years.
+
+                  
+                %p
+                  After completing college from Leningrad State University from where his family resided, Putin started his career as a KGB intelligence officer that he held until right before the collapse of the Soviet Union in 1991. The KGB, which real meaning translates to the “Committee for State Security” was a security agency that was built for the Soviet Union in 1954. Agents acted as internal security, intelligence and a covert police force for the ground to protect Russia from external and internal affairs. After the fall of the central government, Putin, now a colonel in the KGB would return home to explore further options in politics in supporting a liberal politician who would later win the election, granting Putin a step into Russian government.
+                .float_right.large-6.quote_container
+                  %h2 
+                    “I want to remind you that Russia is one of the most powerful nuclear nations. This is a reality, not just words.”
+                
+                %p 
+                  In 1999 the current president, Boris Yeltsin resigned and appointed Putin to continue as president of Russia until the upcoming elections. Putin was then re-elected in 2004 due to the uproar of September 11, Putin used the media to present a firm response to the terrorist threats, which would later help him win his second election.
+
+                
+
+                %p 
+                  In march 2008, Putin would be secured to Russian’s prime minister, but then miraculously was re-re-elected into his third term of presidency, despite Russia’s two-term limit. Unfortunately, this is due to the persistent myth that Russia’s constitution is nothing more then a meaningless document that Mr. Putin overcame to achieve a unyielding central power. Putin exercised his power to engage above the systems of executive, legislative and judicial power. Although completely legal when looked at on paper, it was looked at as a huge violation of control.
+
+                
+
+                  
+                // Last Paragraph
+                %p 
+                  Putin has since then used Russia’s weak policies to crippling the country’s parliamentary power and regulating a iron fist over the countries media sources. Putin has also been said that he might run for the upcoming 2018 election. If elected for his forth term, Putin would be in power for almost a quarter of a century which would make him Russia longest-serving leader since the age of Josef Stalin, the father of communism in former Soviet Russia.
+                
+                
+
+              
+               
+                
+
+
+      
+
+      
+
+
+
+      
+                
+              
+          
+
+            
+            
+         
             
               
 
@@ -229,12 +230,7 @@
             %a{:href => "#"} 
               Sources
 
-#loading
-%script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
-:javascript
-  $(window).load(function() {
-    $("#loading").fadeOut("slow");
-  })
+
 
       
 
