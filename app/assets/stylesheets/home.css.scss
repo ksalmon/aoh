@@ -395,7 +395,7 @@ video {
     .container{
       position:absolute;
       top:20%;
-    left:0;
+      left:0;
       right:0;
       margin-left:auto;
       margin-right:auto;
@@ -404,6 +404,13 @@ video {
       padding:100px 50px 100px 50px;
       text-align:center;
       background:$white;
+
+      @media only screen and (max-width: 40em) {
+        width:100%;
+        height:100%;
+        padding:100px 20px 0px 20px;
+        top:0;
+      }
     }
 
     #exit{
