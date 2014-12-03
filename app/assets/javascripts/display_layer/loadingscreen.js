@@ -1,5 +1,5 @@
 //Loading Screen
-$(window).load(function() {
+$(window).ready(function() {
   $("#loading").fadeOut("slow");
 })
 

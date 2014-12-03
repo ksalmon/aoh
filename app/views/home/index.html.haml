@@ -13,7 +13,7 @@
             %span Home
 
         %li
-          %a{:href => "/collections/putin"}
+          %a{:href => "/collections/west"}
             %i.icon-featured
             %span Featured
       
@@ -39,9 +39,12 @@
         %a.button{:href => "/gallery/collection"}  View The Collection
         .arrow
           = image_tag "arrow.svg"
-        %video{:autoplay => "", :loop => ""}
+        %video.show-for-medium-up{:autoplay => "", :loop => ""}
           %source{:src => "videos/intro.webm", :type => "video/webm"}
           %source{:src => "videos/intro.mp4", :type => "video/mp4"}
+        .mobile_img.hide-for-medium-up{:style => "background:url(/images/saddam/kuwait_oilfire.jpg); background-position:center; background-size:cover;"}
+
+
           
         
 
@@ -81,7 +84,7 @@
             %h5 Op-Ed Article
           .copy.large-11.large-centered.column
             %p.large-6.column 
-              = image_tag "author1.jpg", size: "80x80", class: "author_icon"  
+              = image_tag "author2.jpg", size: "80x80", class: "author_icon"  
               The great pessimist, Thomas
               Hobbes based his entire life to
               the greater understanding of the
@@ -100,11 +103,11 @@
               controlled or ruled by a central government.
               However, Hobbes theories seem contradicting
               at a certain point.
-            .byline.large-6.text-right.column - By Kyle Salmon
+            .byline.large-6.text-right.column - By Kendall Cuthie
 
           .large-12.column
             .column
-              %a.article_link.column.large-2.push-5.large-push-5.small-12{:href => "/articles/intro"} Read More
+              %a.article_link.column.large-2.push-5.large-push-5.small-12{:href => "/articles/hobbes"} Read More
 
         .section_break
 
@@ -195,7 +198,7 @@
           %a{:href => "#"} 
             Sources
 
-  #loading
+  
 
 
 
