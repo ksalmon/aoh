@@ -35,21 +35,41 @@
             %i.icon-shop
             %span Store
     .st-pusher
-      .side_bar_container
-        .search.row
-          .large-10.push-2.column
+      .container_collection
+        .row
+          .search.column.large-3
+
             %h2.large-6
               Collection
+            %input.input_gallery_search.large-12.column{:name => "firstname", :type => "text", :placeholder => "Search..."}/
 
-            
-            %input.input_gallery_search.large-9.column{:name => "firstname", :type => "text", :placeholder => "Search Collection..."}/
+      
 
-      // Right Container
-
-      .char_container.right
-        .arrow
-          = image_tag "arrow.svg"
+          %a.char_container.column.large-9{:href => "/collections/putin"}
+            .char_figure{:style => "background:url(/images/putin/putin1.jpg); background-position:center; background-size:cover;"}
         
+              .black_cover
+                .content
+                  %h3
+                    Vladimir Putin
+                  %hr
+                  %h5
+                    President of Russia
+            .arrow
+              = image_tag "arrow.svg"
+
+          %a.char_container.column.large-9{:href => "/collections/west"}
+            .char_figure{:style => "background:url(/images/kanye1.jpg); background-position:center; background-size:cover;"}
+              .black_cover
+                .content
+                  %h3
+                    Kanye West
+                  %hr
+                  %h5
+                    Singer, Rapper, Music Producer
+            .arrow
+              = image_tag "arrow.svg"
+            
           
     
 
