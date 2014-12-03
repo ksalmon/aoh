@@ -1,11 +1,9 @@
-%body.articles
+%body
   
   #st-container.st-container
-    .svg-wrap
-      %svg{:height => "64", :viewBox => "0 0 64 64", :width => "64"}
-        %path#arrow-left-1{:d => "M46.077 55.738c0.858 0.867 0.858 2.266 0 3.133s-2.243 0.867-3.101 0l-25.056-25.302c-0.858-0.867-0.858-2.269 0-3.133l25.056-25.306c0.858-0.867 2.243-0.867 3.101 0s0.858 2.266 0 3.133l-22.848 23.738 22.848 23.738z"}/
-      %svg{:height => "64", :viewBox => "0 0 64 64", :width => "64"}
-        %path#arrow-right-1{:d => "M17.919 55.738c-0.858 0.867-0.858 2.266 0 3.133s2.243 0.867 3.101 0l25.056-25.302c0.858-0.867 0.858-2.269 0-3.133l-25.056-25.306c-0.858-0.867-2.243-0.867-3.101 0s-0.858 2.266 0 3.133l22.848 23.738-22.848 23.738z"}/
+    /
+      example menus
+      these menus will be on top of the push wrapper
     %nav#menu.st-menu.st-effect
       %h2.icon.icon-stack 
       %ul
@@ -23,7 +21,7 @@
           %a{:href => "/gallery/collection"}
             -link_to gallery_collection_path 
             %i.icon-collection
-            %span Collection 
+            %span Collection
               
         %li
           %a{:href => "/articles/intro"}
@@ -35,84 +33,153 @@
             %i.icon-shop
             %span Store
     .st-pusher
-      .header_img{:style => "background:url(/images/saddam/kuwait_oilfire.jpg); background-position:center; background-size:cover;"}
-        .header_text.row
-          .big_copy.large-12.column THE PLANET IS FINE. <br/> THE PEOPLE ARE FUCKED.
-          .small_copy.large-4.right.column  &ndash; George Carlin
-
       
-        .container
-          / Top Navigation
-          %section.color-5
-            %nav.nav-circleslide
-              %a.prev{:href => "/articles/intro"}
-                %span.icon-wrap
-                  %svg.icon{:height => "32", :viewBox => "0 0 64 64", :width => "32"}
-                    %use{"xlink:href" => "#arrow-left-1"}/
-                %div
-                  %img
-                    = image_tag "author1.jpg"
-              %a.next{:href => "/articles/intro"}
-                %span.icon-wrap
-                  %svg.icon{:height => "32", :viewBox => "0 0 64 64", :width => "32"}
-                    %use{"xlink:href" => "#arrow-right-1"}/
-                %div
-                  %img
-                    = image_tag "author1.jpg"
-    
+
+
+          
+        
+
+        
       .main.clearfix
         .row#st-trigger-effects
           %a.main-nav{"data-effect" => "st-effect"}
             %i.icon-nav_burger
-      
 
-      .article_content.row
-        .author_info.large-2.column
-          .image.large-12
-            = image_tag "author2.jpg", size: "80x80", class: "author_icon"  
-          .name.large-12.large-centered Kendall Cuthie 
-          .title.large-12.large-centered Designer | Writer
+        
+      
+        
+
+        .section_break
 
         .article.row
           .copy.large-11.large-centered.column
-            .title.text-center
-              %h2 With Great Power...
-              %h5 Op-Ed Article
+            %p.large-12.column 
+              
+              Vladimir Putin
 
-            %p.large-6.column  
-              The great pessimist, Thomas Hobbes based his entire life to the greater understanding of the war and turmoil that mankind has made for itself. Hobbes is famous for his firm concept that men are born greedy, or selfish. Stating that all humans would stoop to certain levels of evil in order to place them in a favorable position above others.
-              As a English philosopher, he explored the idea of social contact, or the authority that state has over an individual. He was fascinated by how people allow themselves to become controlled or ruled by a central government. However, Hobbes theories seem contradicting at a certain point.  On one hand Hobbes believes that because of the harsh intention of human nature, people should have a firm central government, like a king that will make all 
+              Photo Credit:
+              %a{:href => "https://www.flickr.com/photos/121483302@N02/14601882594/"} theglobalpanorama
+              via
+              %a{:href => "http://compfight.com"} Compfight
+              %a{:href => "“https://creativecommons.org/licenses/by-sa/2.0/“"} cc
 
+              %br
+              Photo Credit:
+              %a{:href => "https://www.flickr.com/photos/7384686@N05/2668825486/"} firdaus omar
+              via
+              %a{:href => "http://compfight.com"} Compfight
+              %a{:href => "https://creativecommons.org/licenses/by-nc-nd/2.0/"} cc
+
+              %br
+              Photo Credit:
+              %a{:href => "https://www.flickr.com/photos/25100842@N08/11038250935/"} mac_ivan
+              via
+              %a{:href => "http://compfight.com"} Compfight
+              %a{:href => "“https://creativecommons.org/licenses/by/2.0/"} cc
+
+              %br
+              Photo Credit:
+              %a{:href => "https://www.flickr.com/photos/112078056@N07/12192000415/"} snamess
+              via
+              %a{:href => "http://compfight.com"} Compfight
+              %a{:href => "“https://creativecommons.org/licenses/by/2.0/“"} cc
+
+              %br
+              Photo Credit:
+              %a{:href => "https://www.flickr.com/photos/112078056@N07/12159949866/"} snamess
+              via
+              %a{:href => "http://compfight.com"} Compfight
+              %a{:href => "https://creativecommons.org/licenses/by/2.0/"} cc
+
+              %br
+              Photo Credit:
+              %a{:href => "https://www.flickr.com/photos/25100842@N08/11038342796/"} mac_ivan
+              via
+              %a{:href => "http://compfight.com"} Compfight
+              %a{:href => "“https://creativecommons.org/licenses/by/2.0/"} cc
+
+              %br
+              Kanye West
+
+              %br
+
+              Photo Credit:
+              %a{:href => "https://www.flickr.com/photos/14542600@N07/1568428978/"} virginbob2
+              via
+              %a{:href => "http://compfight.com"} Compfight
+              %a{:href => "https://www.flickr.com/help/general/#147"} cc
+
+              %br
+              Photo Credit:
+              %a{:href => "https://www.flickr.com/photos/24731630@N02/10989645155/"} Peter Hutchins
+              via
+              %a{:href => "http://compfight.com"} Compfight
+              %a{:href => "“https://creativecommons.org/licenses/by/2.0/"} cc
+
+              %br
+              Photo Credit:
+              %a{:href => "https://www.flickr.com/photos/20649648@N00/14490633150/"} evolverphoto
+              via
+              %a{:href => "http://compfight.com"} Compfight
+              %a{:href => "https://creativecommons.org/licenses/by-nc-nd/2.0/"} cc
+
+              %br
+              Photo Credit:
+              %a{:href => "https://www.flickr.com/photos/24731630@N02/10989914036/"} Peter Hutchins
+              via
+              %a{:href => "http://compfight.com"} Compfight
+              %a{:href => "“https://creativecommons.org/licenses/by/2.0/"} cc
+
+              %br
+              Saddam Hussin
+              %br
+              Photo Credit:
+              %a{:href => "https://www.flickr.com/photos/44083360@N00/4385674892/"} Mink
+              via
+              %a{:href => "http://compfight.com"} Compfight
+              %a{:href => "“https://creativecommons.org/licenses/by-nc-sa/2.0/"} cc
+              %br
+              Ann Coulter
+              %br
+
+              Photo Credit:
+              %a{:href => "https://www.flickr.com/photos/22007612@N05/6874337257/"} Gage Skidmore
+              via
+              %a{:href => "http://compfight.com"} Compfight
+              %a{:href => "“https://creativecommons.org/licenses/by-sa/2.0/"} cc
+              %br
+              Stalin
+              %br
+              Photo Credit:
+              %a{:href => "https://www.flickr.com/photos/36919288@N08/3946031891/"} Za Rodinu
+              via
+              %a{:href => "http://compfight.com"} Compfight
+              %a{:href => "“https://creativecommons.org/licenses/by-nc-sa/2.0/"} cc
+              %br
+              Kim Jong Il
+              %br
+              Photo Credit:
+              %a{:href => "https://www.flickr.com/photos/34267346@N06/6538671583/"} zennie62
+              via
+              %a{:href => "http://compfight.com"} Compfight
+              %a{:href => "https://creativecommons.org/licenses/by-nd/2.0/"} cc
            
-            %p.large-6.column  
-              decisions for the population.  He disliked the base of a Democracy, seeing that the general public couldn’t be trusted to make the right and moral decisions that a government has control over. On the other hand we still have to make an effort to see that the one in charge is stable to lead without moral weakness.  This is where Hobbes direction seems unclear, he is confident in the overwhelming evil of mankind yet he believes in the sanction of a single ruler.
-            .byline.large-6.text-right.column - By Kendall Cuthie
             
-          
-          
-      .subscribe_section
-        .container.row
-          .headline.large-12.column
-            %h2 
-              Subscribe Today
-              %span 
-                ENTER YOUR E-MAIL ADDRESS TO GET UPDATES ON NEW ARTICLES…
-          .email_input.large-10.right.column
-            %input.input_textforum.large-10.column{:name => "firstname", :type => "text", :placeholder => "Enter E-mail Here"}/
-            %input#button.input_button.large-2.column{:type => "submit", :value => "Submit"}/
-          .social_line.large-12
-            %h5 
-              OR FOLLOW US ON TWITTER, FACEBOOK OR INSTAGRAM
-              %span 
+            
+
+        
+                
       .footer
-        .row
-          .info.large-12.column
-            %a{:href => "#"} 
-              Contact Us
-            %span 
-              |
-            %a{:href => "/home/sources"} 
-              Sources
+        .info.large-12.row
+          %a{:href => "#"} 
+            Contact Us
+          %span 
+            |
+          %a{:href => "#"} 
+            Sources
+
+  
+
 
 
   #email_confirm
@@ -121,11 +188,7 @@
       %h5 Your E-mail has been added to our list!
 
       #exit
-        Close and Go Back 
-
-
-
-
+        Close and Go Back
 
 :javascript
 
@@ -145,6 +208,8 @@
       $("#email_confirm").fadeOut();
     });
   });
+
+ 
   // Sidebar Effect
 
   var SidebarMenuEffects = (function() {

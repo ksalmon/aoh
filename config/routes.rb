@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   # Get Files
 
   get 'home/index'
+  get 'home/sources'
   get 'articles/intro'
   get 'gallery/collection'
   
