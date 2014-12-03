@@ -101,6 +101,7 @@ figure.effect-rollover-line {
 
 figure.effect-rollover-line img {
 	max-width: none;
+	height:200px;
 	width: -webkit-calc(100% + 20px);
 	width: calc(100% + 20px);
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -173,6 +174,7 @@ figure.effect-cross {
 
 figure.effect-cross img {
 	background:$white;
+	height:200px;
 	opacity: 0.9;
 	-webkit-transition: opacity 0.35s;
 	transition: opacity 0.35s;
