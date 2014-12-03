@@ -264,6 +264,9 @@ video {
 
     @media only screen and (max-width: 40em) {
       height:auto;
+      padding:40px;
+      height:450px;
+      top:0;
     }
 
     h2{ 
@@ -289,22 +292,31 @@ video {
         background:none;
         color:$white;
         height:40px;
+        margin:0;
       }
 
       ::-webkit-input-placeholder {
-         color: rgba($white,0.85);
+        color: rgba($white,0.85);
+        -webkit-appearance: none;
+        border-radius: 0;
       }
 
       :-moz-placeholder { /* Firefox 18- */
-         color: rgba($white,0.85);  
+        color: rgba($white,0.85);  
+        -webkit-appearance: none;
+        border-radius: 0;
       }
 
       ::-moz-placeholder {  /* Firefox 19+ */
-         color: rgba($white,0.85);  
+         color: rgba($white,0.85);
+         -webkit-appearance: none;
+        border-radius: 0;
       }
 
       :-ms-input-placeholder {  
-         color: rgba($white,0.85);  
+         color: rgba($white,0.85); 
+         -webkit-appearance: none;
+        border-radius: 0; 
       }
 
       .input_button{
