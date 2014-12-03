@@ -67,10 +67,10 @@
                     to todays pop-culture. No one will deny his
                     success throughout his career as a rap artist, but
                     he seems to find it very...
-                  %a.simple_link{:href => "/collections/putin"}
+                  %a.simple_link{:href => "/collections/west"}
                     VIEW THE FULL ARTICLE
                   %span.post_date.right.hide-for-small-down POSTED // 12/02/14
-            .ft_img_2.show-for-medium-up{:style => "background:url(/images/kanye2.jpg); background-position:center;"}
+            .ft_img_2.show-for-medium-up{:style => "background:url(/images/kanye2.jpg); background-position:center; background-size:cover;"}
             
 
         .section_break
@@ -101,8 +101,10 @@
               However, Hobbes theories seem contradicting
               at a certain point.
             .byline.large-6.text-right.column - By Kyle Salmon
-          
-            %a.article_link.column.small-2.pull-5{:href => "/articles/intro"} Read More
+
+          .large-12.column
+            .column
+              %a.article_link.column.large-2.push-5.large-push-5.small-12{:href => "/articles/intro"} Read More
 
         .section_break
 
@@ -163,7 +165,7 @@
               %a{:href => "#"} View more
 
           %figure.effect-cross
-            %img{:alt => "img08", :src => "/images/vwhite.png"}/
+            %img{:alt => "img08", :src => "/images/vwhite.png", :width => "300px", :height => "300px"}/
             %figcaption
               
               %p +
@@ -178,7 +180,7 @@
                 ENTER YOUR E-MAIL ADDRESS TO GET UPDATES ON NEW ARTICLES…
           .email_input.large-10.right.column
             %input.input_textforum.large-10.column{:name => "firstname", :type => "text", :placeholder => "Enter E-mail Here"}/
-            %input.input_button.large-2.column{:type => "submit", :value => "Submit"}/
+            %input#button.input_button.large-2.column{:type => "submit", :value => "Submit"}/
           .social_line.large-12
             %h5 
               OR FOLLOW US ON TWITTER, FACEBOOK OR INSTAGRAM
@@ -194,19 +196,35 @@
             Sources
 
   #loading
-  
-
-    
 
 
 
+  #email_confirm
+    .container
+      %h2 Thank You!
+      %h5 Your E-mail has been added to our list!
 
-
-
-
-
+      #exit
+        Close and Go Back
 
 :javascript
+
+  $(document).ready(function(){
+    $("#email_confirm").hide();
+
+    $("#button").click(function(){
+      $("#email_confirm").fadeIn();
+      $(".input_textforum").val('');
+    });
+
+    $("#exit").click(function(){
+      $("#email_confirm").fadeOut();
+    });
+
+    $("#email_confirm").click(function(){
+      $("#email_confirm").fadeOut();
+    });
+  });
 
  
   // Sidebar Effect

@@ -99,7 +99,7 @@
                 ENTER YOUR E-MAIL ADDRESS TO GET UPDATES ON NEW ARTICLES…
           .email_input.large-10.right.column
             %input.input_textforum.large-10.column{:name => "firstname", :type => "text", :placeholder => "Enter E-mail Here"}/
-            %input.input_button.large-2.column{:type => "submit", :value => "Submit"}/
+            %input#button.input_button.large-2.column{:type => "submit", :value => "Submit"}/
           .social_line.large-12
             %h5 
               OR FOLLOW US ON TWITTER, FACEBOOK OR INSTAGRAM
@@ -115,13 +115,36 @@
               Sources
 
 
-      
+  #email_confirm
+    .container
+      %h2 Thank You!
+      %h5 Your E-mail has been added to our list!
+
+      #exit
+        Close and Go Back 
 
 
 
 
 
 :javascript
+
+  $(document).ready(function(){
+    $("#email_confirm").hide();
+
+    $("#button").click(function(){
+      $("#email_confirm").fadeIn();
+      $(".input_textforum").val('');
+    });
+
+    $("#exit").click(function(){
+      $("#email_confirm").fadeOut();
+    });
+
+    $("#email_confirm").click(function(){
+      $("#email_confirm").fadeOut();
+    });
+  });
   // Sidebar Effect
 
   var SidebarMenuEffects = (function() {

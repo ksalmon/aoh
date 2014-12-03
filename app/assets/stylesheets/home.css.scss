@@ -172,7 +172,8 @@ video {
 		}
 		.byline{
 			float:right;
-			margin-top:5px;
+			margin-top:15px;
+			margin-bottom:10px;
 			padding-right:40px;
 		}
 		.article_link{
@@ -357,4 +358,43 @@ video {
 	span{
 		color:$white;
 	}
+}
+
+// Dialog Box
+
+#email_confirm{
+	position:fixed;
+	top:0;
+    left:0;
+    right:0;
+    height:100%;
+    width:100%;
+    z-index:10000;
+    background:rgba($black,0.8);
+
+    .container{
+    	position:absolute;
+    	top:20%;
+		left:0;
+	    right:0;
+	    margin-left:auto;
+	    margin-right:auto;
+    	width:60%;
+    	height:auto;
+    	padding:100px 50px 100px 50px;
+    	text-align:center;
+    	background:$white;
+    }
+
+    #exit{
+    	margin-top:20px;
+    	color:$gray;
+    	transition:color 0.3s ease-out;
+
+	    &:hover{
+    		color:$red;
+    		cursor:pointer;
+    	}
+    }
+	
 }

@@ -15,7 +15,7 @@
             %span Home
 
         %li
-          %a{:href => "/collections/putin"}
+          %a{:href => "/collections/west"}
             %i.icon-featured
             %span Featured
       
@@ -41,20 +41,20 @@
           / Top Navigation
           %section.color-5
             %nav.nav-circleslide
-              %a.prev{:href => "/item1"}
+              %a.prev{:href => "/collections/west"}
                 %span.icon-wrap
                   %svg.icon{:height => "32", :viewBox => "0 0 64 64", :width => "32"}
                     %use{"xlink:href" => "#arrow-left-1"}/
                 %div
                   %img
-                    = image_tag "profile/putin.jpg"
-              %a.next{:href => "/item3"}
+                    = image_tag "profile/west.jpg"
+              %a.next{:href => "/collections/west"}
                 %span.icon-wrap
                   %svg.icon{:height => "32", :viewBox => "0 0 64 64", :width => "32"}
                     %use{"xlink:href" => "#arrow-right-1"}/
                 %div
                   %img
-                    = image_tag "profile/putin.jpg"
+                    = image_tag "profile/west.jpg"
     
       .main.clearfix
         .row#st-trigger-effects
@@ -134,31 +134,28 @@
                   Issues With Ukraine
 
                 %p
-                  Russian government has never quite recovered from the destruction caused by the fall of the Soviet Union. Its inconsistency in the government presence has left a transparent view for the world to understand that Russian leaders have been far from trustworthy. President Putin has made this case very clear due to prior issues that western media have touched on in the past four years.
+                  The winter Olympics in Sochi Russia was an absolute goldmine for bad publicity in exposing some of Russia’s most transparent corruption. From accusations of money laundering to the uproar in the west over Putin’s anti-gay opinions, its safe to say that the winter Olympics couldn’t of ended faster for Russia’s president.
 
                   
                 %p
-                  After completing college from Leningrad State University from where his family resided, Putin started his career as a KGB intelligence officer that he held until right before the collapse of the Soviet Union in 1991. The KGB, which real meaning translates to the “Committee for State Security” was a security agency that was built for the Soviet Union in 1954. Agents acted as internal security, intelligence and a covert police force for the ground to protect Russia from external and internal affairs. After the fall of the central government, Putin, now a colonel in the KGB would return home to explore further options in politics in supporting a liberal politician who would later win the election, granting Putin a step into Russian government.
+                  Russia was reported on spending little over 12 billion in bidding as the 2014 host and then another 51 billion dollars in producing it, making it the most expensive games in the history of Olympics with almost the lowest number of events. 
                 .float_right.large-6.quote_container
                   %h2 
                     “I want to remind you that Russia is one of the most powerful nuclear nations. This is a reality, not just words.”
                 
                 %p 
-                  In 1999 the current president, Boris Yeltsin resigned and appointed Putin to continue as president of Russia until the upcoming elections. Putin was then re-elected in 2004 due to the uproar of September 11, Putin used the media to present a firm response to the terrorist threats, which would later help him win his second election.
-
-                
+                  However after an interview with Dmitry Kozak, deputy prime minister who was leading the preparations of the winter Olympics explained that only 6 billion of that was budget was directed for the games. That makes 45 billion dollars going directly towards the development and “infrastructure”, making this story incredibly hard to believe. The Russian government wanted the world to believe that absurd amount of money was going directly towards transportation and venues. When we look at the number of events, it seems even worse. When compared to the Olympic games in Beijing in 2008 (which cost only 132mill), Sochi played only a third of the total event that in comparison to 2008. That means it only had a third of the number of athletes to transport and house and a third the number of events to build venues for.  
 
                 %p 
-                  In march 2008, Putin would be secured to Russian’s prime minister, but then miraculously was re-re-elected into his third term of presidency, despite Russia’s two-term limit. Unfortunately, this is due to the persistent myth that Russia’s constitution is nothing more then a meaningless document that Mr. Putin overcame to achieve a unyielding central power. Putin exercised his power to engage above the systems of executive, legislative and judicial power. Although completely legal when looked at on paper, it was looked at as a huge violation of control.
+                  When looking at where the rest of the 45 billion went, we look towards the private contracts involved. When mega events such as the Olympics or the World Cup are placed in a country, that country’s government will hire state-owned businesses to follow through with any work such as building venues or housing. When Russia’s government released those contractors’ names, Putin’s friends showed up in the very first group.  The Rotenberg brothers are Russia’s largest construction company for gas and electrical lines, are longtime friends to Vladimir Putin are we’re given a total of 21 government contracts. Those 21 government contracts added up to about 7 billion dollars.
+
 
                 
 
                   
                 // Last Paragraph
                 %p 
-                  Putin has since then used Russia’s weak policies to crippling the country’s parliamentary power and regulating a iron fist over the countries media sources. Putin has also been said that he might run for the upcoming 2018 election. If elected for his forth term, Putin would be in power for almost a quarter of a century which would make him Russia longest-serving leader since the age of Josef Stalin, the father of communism in former Soviet Russia.
-                
-                
+                  
 
               
                
@@ -215,7 +212,7 @@
                 ENTER YOUR E-MAIL ADDRESS TO GET UPDATES ON NEW ARTICLES…
           .email_input.large-10.right.column
             %input.input_textforum.large-10.column{:name => "firstname", :type => "text", :placeholder => "Enter E-mail Here"}/
-            %input.input_button.large-2.column{:type => "submit", :value => "Submit"}/
+            %input#button.input_button.large-2.column{:type => "submit", :value => "Submit"}/
           .social_line.large-12
             %h5 
               OR FOLLOW US ON TWITTER, FACEBOOK OR INSTAGRAM
@@ -232,13 +229,38 @@
 
 
 
-      
+
+
+  #email_confirm
+    .container
+      %h2 Thank You!
+      %h5 Your E-mail has been added to our list!
+
+      #exit
+        Close and Go Back     
 
 
 
 
 
 :javascript
+
+  $(document).ready(function(){
+    $("#email_confirm").hide();
+
+    $("#button").click(function(){
+      $("#email_confirm").fadeIn();
+      $(".input_textforum").val('');
+    });
+
+    $("#exit").click(function(){
+      $("#email_confirm").fadeOut();
+    });
+
+    $("#email_confirm").click(function(){
+      $("#email_confirm").fadeOut();
+    });
+  });
   // Sidebar Effect
 
   var SidebarMenuEffects = (function() {
