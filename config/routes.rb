@@ -18,6 +18,10 @@ Rails.application.routes.draw do
   # Individual Asshole Articles
   get 'collections/putin'
   get 'collections/west'
+  get 'collections/coulter'
+  get 'collections/jones'
+  get 'collections/jongil'
+  get 'collections/stalin'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

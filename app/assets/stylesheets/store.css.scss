@@ -1,3 +1,107 @@
 // Place all the styles related to the store controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'display_layer';
+
+.store{
+	#cart_bar{
+		position:fixed;
+		right:0;
+		top:0px;
+		height:50px;
+		width:185px;
+		padding:15px 25px;
+		background:$gray;
+		transition:background 0.3s ease-out;
+
+		&:hover{
+			cursor:pointer;
+			color:$gold;
+			background:$lt-gray;
+		}
+
+		.icon-shop{
+			color:$white;
+			font-size:20px;
+			padding-right:10px;
+			margin-right:8px;
+			border-right:1px solid $white;
+		}
+
+		h6{
+			display:inline;
+			vertical-align: text-top;
+		}
+	}
+
+	// Toggle Cart
+
+	.container{
+		min-height:450px;
+		background:$white;
+		#close{
+			position:absolute;
+			top:10px;
+			left:10px;
+			font-weight:600;
+
+			&:hover{
+				cursor:pointer;
+				color:$red;
+			}
+		}
+
+		.cart_list{
+			position:absolute;
+			width:70%;
+			float:left;
+			h5{ text-align:left; font-size:14px;}
+			h6{
+				text-align:left;
+				color:$black;
+			}
+
+			hr{
+				color:$red;
+			}
+		}
+
+		.cart_process{
+			position:absolute;
+			top:0;
+			right:0;
+			height:100%;
+			width:20%;
+			padding:300px 10px 0 10px;
+			background:$black;
+			display:inline-block;
+			text-align:center;
+
+			h2{
+				font-family:$primary-font;
+				font-size:30px;
+				color:$white;
+				font-weight:700;
+			}
+			h6{
+				font-size:10px;
+				color:$gold;
+			}
+
+			.article_link{
+				margin-top:17px;
+				border-color:$gold;
+				padding-left:22px;
+				color:$white;
+			}
+		}
+
+		.article_link{
+			margin-top:65px;
+
+			&:hover{
+					cursor:pointer;
+				}
+		}
+	}
+}
