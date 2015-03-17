@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  resources :products
+
   get 'store/index'
 
   # Get Files
