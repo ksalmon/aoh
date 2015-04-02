@@ -1,6 +1,5 @@
-( function( window ) {
-
-	var welcome = document.getElementById('welcome');
-	welcome.textContent = "Welcome to your Script Test Enviroment"
-
-})( window );
+$(function() {
+  var welcome = document.getElementById('welcome');
+  var number = parseFloat("21.4")
+  welcome.textContent = number
+});

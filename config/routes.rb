@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get 'home/sources'
   get 'articles/intro'
   get 'gallery/collection'
+
+  get 'js/test'
   
   # Individual Op-Ed Articles
   get 'articles/intro'
